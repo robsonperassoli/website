@@ -14,6 +14,6 @@ pub fn middleware(
 }
 
 pub fn static_directory() -> String {
-  let assert Ok(priv_directory) = wisp.priv_directory("poolboy")
+  let assert Ok(priv_directory) = wisp.priv_directory("website")
   priv_directory <> "/static"
 }
