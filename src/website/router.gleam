@@ -2,7 +2,7 @@ import wisp.{type Request, type Response}
 import gleam/string_builder
 import gleam/http.{Get, Post}
 import website/web
-import website/home_page
+import website/pages/home_page
 
 pub fn handle_request(req: Request) -> Response {
   use req <- web.middleware(req)
