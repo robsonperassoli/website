@@ -5,6 +5,10 @@ pub fn wrap(content: Node(t)) {
   html.Html([], [
     html.Head([
       html.title("Robson Perassoli - Software Engineer"),
+      html.meta([
+        attrs.name("viewport"),
+        attrs.content("width=device-width, initial-scale=1.0"),
+      ]),
       html.link([attrs.href("/public/css/app.css"), attrs.rel("stylesheet")]),
       html.link([
         attrs.href("https://fonts.googleapis.com"),
